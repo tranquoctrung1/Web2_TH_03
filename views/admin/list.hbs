@@ -1,0 +1,24 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Image</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Attend</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each this.data}}
+    <tr>
+      <td> <img src="/{{avatar}}" alt="avarta" sizes="100" srcset="" style="width: 50px;"></td>
+      <th scope="row">{{name}}</th>
+      <td>{{email}}</td>
+      {{#if attend}}
+        <td>true</td>
+      {{else}}
+        <td>false</td>
+      {{/if}}
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

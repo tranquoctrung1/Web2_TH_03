@@ -1,0 +1,32 @@
+<form class="form" method="POST" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="adminid">Admin Id</label>
+    <input type="text" class="form-control" id="adminid" name="adminid" value="{{this.adminid}}" readonly>
+  </div>
+  <div class="form-group">
+    <label for="fullname">Fullname Admin</label>
+    <input type="text" class="form-control" id="fullname" name="fullname" value="{{this.fullname}}">
+  </div>
+  <div class="form-group">
+    <label for="email">Email Admin</label>
+    <input type="email" class="form-control" id="email" name="email" value="{{this.email}}">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone Admin</label>
+    <input type="text" class="form-control" id="phone" name="phone" value="{{this.phone}}">
+  </div>
+  <div class="form-group">
+    <label for="username">username Admin</label>
+    <input type="text" class="form-control" id="username" name="username" value="{{this.username}}">
+  </div>
+  <div class="form-group">
+    <label for="password">Password Amin</label>
+    <input type="text" class="form-control" id="password" name="password">
+  </div>
+  <div class="form-group">
+    <label for="avatar">Avatar</label>
+    <input type="file" class="form-control-file" id="avatar" name="avatar">
+  </div>
+  <button type="submit" class="btn btn-primary">Thay đổi</button>
+  <a class="btn btn-success" href="/admin" role="button"> Quay về </a>
+</form>
